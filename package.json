@@ -1,0 +1,54 @@
+{
+	"name": "maya",
+	"description": "A voice-enabled AI assistant powered by Google Gemini and Web Speech API",
+	"version": "1.0.0",
+	"private": false,
+	"type": "module",
+	"keywords": [
+		"ai",
+		"voice",
+		"assistant",
+		"svelte",
+		"gemini",
+		"speech",
+		"sveltekit",
+		"typescript"
+	],
+	"author": "Prajwal",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/prajwal/maya.git"
+	},
+	"homepage": "https://github.com/prajwal/maya#readme",
+	"bugs": {
+		"url": "https://github.com/prajwal/maya/issues"
+	},
+	"engines": {
+		"node": ">=18.0.0 <22.0.0"
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write .",
+		"format:check": "prettier --check ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-vercel": "^5.4.6",
+		"@sveltejs/vite-plugin-svelte": "^5.0.3",
+		"@tsconfig/svelte": "^5.0.4",
+		"@types/node": "^22.15.21",
+		"prettier": "^3.5.3",
+		"prettier-plugin-svelte": "^3.4.0",
+		"svelte": "^5.28.1",
+		"svelte-check": "^4.1.6",
+		"typescript": "~5.8.3",
+		"vite": "^6.3.5"
+	},
+	"dependencies": {
+		"@google/generative-ai": "^0.24.1",
+		"@sveltejs/kit": "^2.21.1"
+	}
+}
